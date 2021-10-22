@@ -202,11 +202,12 @@ sup {
   top: -0.5em;
 }
 a {
-  color: #0d6efd;
-  text-decoration: underline;
+  color: #ffffff;
+  text-decoration: none;
 }
 a:hover {
-  color: #0a58ca;
+  color: #20ca0a;
+  text-decoration: underline;
 }
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
@@ -505,8 +506,9 @@ progress {
   content: "— ";
 }
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  max-width: 98%;
+  height: 430px;
+  margin: auto;
 }
 .img-thumbnail {
   padding: 0.25rem;
