@@ -1,0 +1,76 @@
+.header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  width: 100%;
+  background-color: #000;
+  display: inline-block;
+  margin: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li a {
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.nav li a:hover {
+  background-color: #4caf50;
+  color: rgb(0, 66, 25);
+}
+
+.nav > li {
+  float: left;
+}
+
+.nav li ul {
+  position: absolute;
+}
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 130px;
+}
+
+.nav li:hover > ul {
+  display: block;
+}
+
+.nav li ul li {
+  position: relative;
+  width: 140px;
+}
+
+.nav li ul li ul {
+  left: 100%;
+  top: 0;
+}
+
+.cuadricula {
+  /*contiene todas las tarjetas*/
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contenedor {
+  /* quien contiene las partes de la tarjeta */
+  background-color: #fff;
+  border: 3px solid #000;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2px;
+}
+
+.contenedor .tarjeta { /* cada parte de la tarjeta */
+  width: 300px;
+}
