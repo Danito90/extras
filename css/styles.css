@@ -1,3 +1,7 @@
+.imgini {
+  text-align: center;
+}
+
 .header {
   position: sticky;
   position: -webkit-sticky;
@@ -56,10 +60,13 @@ ol {
   top: 0;
 }
 
+/* ============= Comienzan las tarjetas =============*/
+
 .cuadricula {
   /*contiene todas las tarjetas*/
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 .contenedor {
@@ -69,8 +76,62 @@ ol {
   display: flex;
   flex-flow: row wrap;
   margin: 2px;
+  width: 48.5%;
+  align-items: center;
+  border-radius: 10px;
 }
 
-.contenedor .tarjeta { /* cada parte de la tarjeta */
+.contenedor .tarjeta.imagen {
+  /* imagen de la tarjeta */
   width: 300px;
+  overflow: hidden;
+}
+
+.contenedor .tarjeta.imagen img {
+  border-radius: 10px;
+  padding: 2px;
+  width: 100%;   /* para que la imagen tome el tamaño del div contenedor */
+  max-height: 100%; /* para que la imagen tome el tamaño del div contenedor */
+}
+
+.contenedor .tarjeta.texto {
+  width: 300px;
+  float: left;
+  text-align: center;
+}
+
+.boton {
+  background-color: #d8c200;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.705);
+}
+
+.boton a {
+  display: block;
+  padding: 15px 32px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgba(41, 39, 39, 0.404);
+  border-radius: inherit;
+}
+
+.boton a:hover {
+  background-color: #073808;
+  color: rgb(255, 255, 255);
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(0, 0, 0);
 }
