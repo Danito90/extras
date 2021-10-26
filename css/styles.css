@@ -76,7 +76,7 @@ ol {
   display: flex;
   flex-flow: row wrap;
   margin: 2px;
-  width: 48.5%;
+  max-width: 48.5%;
   align-items: center;
   border-radius: 10px;
 }
